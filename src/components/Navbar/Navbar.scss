@@ -1,0 +1,31 @@
+/* Navbar.scss */
+
+.Navbar {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 10px 20px;
+
+
+  p {
+    position: absolute;
+    left: 0;
+  }
+
+  a,
+  p {
+    margin: 10px;
+    font-size: 2rem;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  span {
+    color: orange;
+  }
+
+  a:hover {
+    color: orange;
+  }
+}

@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Julee&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  font-family: "Julee";
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  .switch {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-right: 25px;
+  }
+}
+
+/* Für das Dunkle Thema */
+.dark {
+  background-color: black;
+  color: white;
+}
+
+/* Für das Helle Thema */
+.light {
+  background-color: white;
+  color: black;
+}
