@@ -7,14 +7,14 @@ import ThemeContext from "../../ThemeContext";
 
 import "./Home.scss";
 
-const TEXTS = [
-  "Pawel Wojciechowski",
-  "Junior Developer",
-  "Frontend Entwickler",
-  "Softwareentwickler",
-];
+const Home = () => {
+  const TEXTS = [
+    "Pawel Wojciechowski",
+    "Junior Developer",
+    "Frontend Entwickler",
+    "Softwareentwickler",
+  ];
 
-export const Home = () => {
   const isDarkMode = useContext(ThemeContext);
   const [index, setIndex] = React.useState(0);
 
@@ -42,7 +42,7 @@ export const Home = () => {
             Welcome in my World!
           </MovingText>
         </h1>
-        <p>Hallo, i am </p>
+        <p>Hallo, I am </p>
         <span>
           <TextTransition springConfig={presets.gentle}>
             {TEXTS[index % TEXTS.length]}.
@@ -56,3 +56,5 @@ export const Home = () => {
     </div>
   );
 };
+
+export default Home;

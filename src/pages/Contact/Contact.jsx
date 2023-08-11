@@ -9,13 +9,11 @@ export const Contact = () => {
     card: {
       overflow: "hidden",
       cursor: "pointer",
-      margin: "2rem 0.5rem",
-      width: "30vw",
+      width: "20vw",
       height: "40vh",
       border: "2px solid orange",
       borderRadius: "2rem",
     },
-
   };
   const isDarkMode = useContext(ThemeContext);
 
@@ -33,14 +31,8 @@ export const Contact = () => {
             frontComponent={<img src={contact.icon} alt="icon" />}
             backComponent={
               <div>
-                <p>
-                  {contact.title}
-                </p>
-                <a
-                  href={contact.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <p>{contact.title}</p>
+                <a href={contact.url} target="_blank" rel="noopener noreferrer">
                   {contact.url}
                 </a>
               </div>

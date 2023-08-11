@@ -5,7 +5,7 @@ let projects = [
   },
   {
     title: "Alibi Generator",
-    url: "https://pawel-w88.github.io/spa-final-project-pawel-w88/",
+    url: "https://pawel-w88.github.io/alibi_generator/",
   },
   {
     title: "Weather App",
