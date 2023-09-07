@@ -7,7 +7,7 @@ import ThemeContext from "../../ThemeContext";
 
 import "./Home.scss";
 
-const Home = () => {
+export const Home = () => {
   const TEXTS = [
     "Pawel Wojciechowski",
     "Junior Developer",
@@ -57,4 +57,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+// export default Home;

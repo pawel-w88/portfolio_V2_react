@@ -1,8 +1,8 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { useState } from "react";
 import ReactSwitch from "react-switch";
 import { Navbar } from "./components/Navbar";
-import Home from "./pages/HomePage/Home";
+import { Home } from "./pages/HomePage/Home";
 import { About } from "./pages/About/About";
 import { Contact } from "./pages/Contact/Contact";
 import ThemeContext from "./ThemeContext";
@@ -17,22 +17,19 @@ function App() {
   return (
     <ThemeContext.Provider value={isDarkMode}>
       <div className={`App ${isDarkMode ? "dark" : "light"}`}>
-        <Router>
+        <HashRouter>
           <Navbar />
           <div className="switch">
             <label>{isDarkMode ? "Dark Mode" : "Light Mode"}</label>
-            <ReactSwitch
-              onChange={toggleTheme}
-              checked={isDarkMode}
-            />
+            <ReactSwitch onChange={toggleTheme} checked={isDarkMode} />
           </div>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="about" element={<About />} />
-            <Route path="contact" element={<Contact />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="*" />
           </Routes>
-        </Router>
+        </HashRouter>
       </div>
     </ThemeContext.Provider>
   );
